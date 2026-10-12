@@ -18,18 +18,16 @@ The dataset contains right-censored observations: `status` distinguishes deaths 
 
 ## Running the analysis
 
-Run the script from the repository root. It reads the included workbook and saves four plots and a descriptive CSV table in `Abbildungen und Tabellen/`. Those generated files are not committed.
-
-Install R, then restore the package versions and run the analysis from the repository root:
+With R installed (tested with R 4.6.1), run these commands from the repository root:
 
 ```sh
 Rscript -e 'renv::restore()'
 Rscript stat_prakt_ag_r_skript.R
 ```
 
-Alternatively, open `SurvivalAnalysis.Rproj` in RStudio, run `renv::restore()` in the console and execute the script.
+The script saves four plots and a CSV summary in `Abbildungen und Tabellen/`.
 
-The script has been checked with **R 4.6.1**. The package versions are recorded in `renv.lock`; installed packages are not committed. The console displays the Kaplan-Meier estimates, log-rank test, power calculations and Wilcoxon test. Plotting may print informational messages about the default dotplot bin width.
+In RStudio, open `SurvivalAnalysis.Rproj`, run `renv::restore()` in the console and execute the script.
 
 ## Maintenance note
 
