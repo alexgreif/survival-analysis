@@ -1,0 +1,6 @@
+# Preserve the line endings of the existing project files.
+*.R whitespace=cr-at-eol
+*.Rproj whitespace=cr-at-eol
+
+# Preserve upstream formatting in the generated renv bootstrap.
+renv/activate.R whitespace=-blank-at-eol,cr-at-eol

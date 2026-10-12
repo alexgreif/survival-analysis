@@ -1,0 +1,10 @@
+# Local editor state
+.DS_Store
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Generated figures and tables
+/Abbildungen und Tabellen/
+/Rplots.pdf
