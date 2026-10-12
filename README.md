@@ -18,16 +18,16 @@ The dataset contains right-censored observations: `status` distinguishes deaths 
 
 ## Running the analysis
 
-With R installed (tested with R 4.6.1), run these commands from the repository root:
+In RStudio, open `SurvivalAnalysis.Rproj`, run `renv::restore()` in the console to install the required package versions, then execute `stat_prakt_ag_r_skript.R`.
+
+Alternatively, run these commands from the repository root in a terminal:
 
 ```sh
 Rscript -e 'renv::restore()'
 Rscript stat_prakt_ag_r_skript.R
 ```
 
-The script saves four plots and a CSV summary in `Abbildungen und Tabellen/`.
-
-In RStudio, open `SurvivalAnalysis.Rproj`, run `renv::restore()` in the console and execute the script.
+The script saves four plots and a CSV summary in `Abbildungen und Tabellen/`. Tested with R 4.6.1.
 
 ## Maintenance note
 
