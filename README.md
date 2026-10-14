@@ -1,20 +1,13 @@
 # Survival Analysis
 
-A course project in mathematical statistics examining survival times in treatment and placebo groups using a supplied simulated dataset. The analysis combines Kaplan-Meier estimation, a log-rank test, power calculations based on an estimated hazard ratio, and a Wilcoxon rank-sum test to examine age differences between the groups.
-
-## Report
-
-[Project report (PDF, German)](report.pdf)
-
-The report explains the methods and their assumptions, provides intuitive derivations, and discusses the results of the analysis in R.
+A course project in mathematical statistics covering the theory and practice of survival analysis. I estimated survival curves for treatment and placebo groups using the Kaplan-Meier method, compared the groups with a log-rank test, and examined age distributions using a Wilcoxon rank-sum test to investigate potential confounding. I also calculated statistical power and required event counts based on an estimated hazard ratio. The accompanying report explains the methods’ assumptions and provides intuitive derivations of the Kaplan-Meier estimator and the test statistics, including their distributions under the null hypothesis.
 
 ## Files
 
+- [Project report (PDF, German)](report.pdf).
 - `stat_prakt_ag_r_skript.R`: the R analysis script.
-- `simulierte_daten_a20.xlsx`: the supplied dataset, containing 30 observations and the variables `Zeit`, `status`, `Gruppe` and `Alter`.
+- `simulierte_daten_a20.xlsx`: supplied simulated dataset with 30 observations, containing survival times, event/censoring status, group membership and age.
 - `SurvivalAnalysis.Rproj`: the RStudio project file.
-
-The dataset contains right-censored observations: `status` distinguishes deaths from observations censored while alive. The time unit is not documented in the supplied data.
 
 ## Running the analysis
 
